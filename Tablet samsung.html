@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Banana Pie</title>
+  <style>
+    body {
+      background: #ffc6dc;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px 10px; /* Adjusted padding to minimize the space */
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px; /* Reduced margin */
+      color: #d62839;
+    }
+
+    .main-photo {
+      width: 300px;
+      max-width: 80%;
+      margin-bottom: 10px; /* Reduced margin for tighter fit */
+      opacity: 1;
+      transition: opacity 1s ease-out;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .heart {
+      font-size: 80px;
+      cursor: pointer;
+      margin: 10px 0; /* Reduced margin */
+      transition: transform 1s ease, opacity 1s ease;
+    }
+
+    .explode {
+      transform: scale(12);
+      opacity: 0;
+    }
+
+    .top-photo, .image {
+      opacity: 0;
+      transition: opacity 2s ease;
+      width: 450px; /* Larger size for the top photo */
+      max-width: 90%;
+      height: auto;
+      margin: 10px auto; /* Adjusted margin */
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: block;
+    }
+
+    .message, .additional-paragraph {
+      opacity: 0;
+      transition: opacity 2s ease;
+      font-size: 18px;
+      margin: 5px auto; /* Reduced margin */
+      padding: 15px;
+      max-width: 800px;
+      line-height: 1.7;
+      background: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: justify;
+    }
+
+    .show {
+      opacity: 1;
+    }
+
+    .hide-image {
+      opacity: 0;
+    }
+
+    .decorative-images {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px; /* Reduced space between images */
+      align-items: center;
+    }
+
+    .decorative-images img {
+      width: 50px;
+      height: auto;
+      margin: 0 8px; /* Reduced margin */
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .smiley-heart {
+      font-size: 32px;
+      margin-top: 10px; /* Adjusted margin */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>For My Banana Pie </h1>
+
+  <!-- Your picture -->
+  <img src="benji.png" alt="My Photo" class="main-photo" id="my-photo">
+
+  <!-- Heart and banana -->
+  <div class="heart" id="heart">🍌❤️</div>
+
+  <!-- New image at the top inside the message area -->
+  <img src="us.png" alt="Top Photo" class="top-photo" id="top-photo">
+
+  <!-- Decorative flowers -->
+  <div class="decorative-images">
+    <img src="Sunflower.png" alt="Flower 1">
+    <img src="Purple flower.png" alt="Fruit">
+    <img src="Last flower.png" alt="Flower 2">
+    <img src="Butterfly.png" alt="Flower 3">
+  </div>
+
+  <!-- Message -->
+  <div class="message" id="message">
+    Aliyaah, thank you for always being here with me. I know mahirap rin mga araw mo sa sarili mo, but I can assure you — you are safe here.  
+    Forever my Iya, my banana pie, I will always be here for you. The sound of the waves sa Tondaligan, the glare of the midnight sun —  
+    is the same as your staring eye deep to my soul. I will never forget everything about you.  
+    We are only students for now but my baby, we will walk through every problem. I'm with you now — no more running away, no more hiding.  
+    I love you just the way you are. You are kind, soft-hearted, amazing, smart — and no one like others, my love.  
+    You don't have to pretend. You don’t need to think you’re not safe with me.  
+    I’ll keep you warm in cold days, and I love every part of you.  
+    How can I unlove you when everything about you is perfect for me?  
+    I love you 3000, Aliyaah.
+  </div>
+
+  <!-- Additional Paragraph -->
+  <div class="additional-paragraph" id="additional-paragraph">
+    With you, everything is possible my love. Give all the best of you in your journey to become a professional nurse!  
+    No, you are not far behind your journey, you are never failing my love — you are learning, learning to give, learning to live again,  
+    learning to let the best out of you in your life. In my eyes it's the most beautiful event of my life, witnessing these successes you’ve executed:  
+    mga quizzes na pinasa mo, mga exams, and hearing medical words that I'm unfamiliar with — signs that you're on your way to becoming who you want to be.  
+    Don’t lose your good heart my baby, kahit anong sakit pa ibigay nila. Life is harsh sometimes, but there will always be a reward.  
+    I'm so proud of you. It's normal to get exhausted rin — wag ka manghinayang sa sarili. We get tired, we rest, we fight again.  
+    I will never get tired of choosing you everyday. Life is hard, love is hard — but I choose you not because it’s hard, it’s because of you.  
+    You make my life meaningful, I’m enjoying my life now because I’m with you. I love you, Aliyaah, eat up a healthy food, don't think about the past
+    and just be happy my babyyyy, there is no wrong for you happiness, my baby, you are always be my baby, and always be forever be, kahit madalang
+    na tayo mag lalabas niyan this semester, don't worry your boy will not runaway, my love keep chasinggg you dreamss langgg, and i will always support you
+    no matter what, thick or thin, i'm always here for you my baby, hindi ako mawawala, hindi ako magpapaagaw at hindi ako maagaw, sayong sayo ako my love
+    sayong sayo, palagi, ikaw lang pipiliin palagi, i love you 3000
+  </div>
+
+  <!-- Smiley face and heart for the final touch -->
+  <div class="smiley-heart">
+    :>>>>>❤️
+  </div>
+
+  <!-- Second image -->
+  <img src="ALIYAAH.jpg" alt="Aliyaah's Photo" class="image" id="image">
+
+  <script>
+    const heart = document.getElementById('heart');
+    const message = document.getElementById('message');
+    const image = document.getElementById('image');
+    const myPhoto = document.getElementById('my-photo');
+    const topPhoto = document.getElementById('top-photo');
+    const additionalParagraph = document.getElementById('additional-paragraph');
+
+    heart.addEventListener('click', () => {
+      heart.classList.add('explode');
+      myPhoto.classList.add('hide-image');
+
+      setTimeout(() => {
+        topPhoto.classList.add('show');
+        message.classList.add('show');
+        image.classList.add('show');
+        additionalParagraph.classList.add('show');
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Explosion for Aliyaah</title>
+  <style>
+    body {
+      background: #ff24a4;
+      color: rgb(248, 229, 215);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 20px;
+      overflow-x: hidden;
+    }
+
+    /* Styling for your picture */
+    .main-photo {
+      width: 200px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    /* Styling for hearts */
+    .heart {
+      font-size: 70px;
+      cursor: pointer;
+      transition: transform 1s ease, opacity 1s ease;
+    }
+
+    .explode {
+      transform: scale(12);
+      opacity: 0;
+    }
+
+    /* Message styling */
+    .message {
+      opacity: 0;
+      transition: opacity 2s ease;
+      font-size: 1000px;
+      margin: 30px 20px 0;
+      padding: 0 20px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* Image styling */
+    .image {
+      opacity: 0;
+      transition: opacity 2s ease;
+      width: 80%;
+      max-width: 350px;
+      height: auto;
+      margin: 30px auto 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      display: block;
+    }
+
+    /* Make image visible */
+    .show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your picture -->
+  <img src="Me.png" alt="My Photo" class="main-photo">
+
+  <!-- Heart and banana -->
+  <div class="heart" id="heart">🍌❤️</div>
+
+  <!-- Message that will appear -->
+  <div class="message" id="message">
+    Aliyaah, thank you for always being here with me. I know mahirap rin mga araw mo sa sarili mo, but I can assure you — you are safe here.  
+    Forever my Iya, my banana pie, I will always be here for you. The sound of the waves sa Tondaligan, the glare of the midnight sun —  
+    is the same as your staring eye deep to my soul. I will never forget everything about you.  
+    We are only students for now but my baby, we will walk through every problem. I'm with you now — no more running away, no more hiding.  
+    I love you just the way you are. You are kind, soft-hearted, amazing, smart — and no one like others, my love.  
+    You don't have to pretend. You don’t need to think you’re not safe with me.  
+    I’ll keep you warm in cold days, and I love every part of you.  
+    How can I unlove you when everything about you is perfect for me?  
+    I love you 3000, Aliyaah.
+  </div>
+
+  <!-- Second image that will appear -->
+  <img src="ALIYAAH.jpg" alt="Aliyaah's Photo" class="image" id="image">
+
+  <script>
+    const heart = document.getElementById('heart');
+    const message = document.getElementById('message');
+    const image = document.getElementById('image');
+
+    heart.addEventListener('click', () => {
+      heart.classList.add('explode');
+      setTimeout(() => {
+        message.classList.add('show');
+        image.classList.add('show');
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>
